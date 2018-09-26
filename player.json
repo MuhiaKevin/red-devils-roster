@@ -1,0 +1,147 @@
+
+{
+  "goalkeepers" : [],
+  "defenders" : [],
+
+  
+  "middlefielders" : [
+    {
+
+      "name" : "Paul Pogba",
+      "position" : "CM",
+      "number" : 6,
+      "age": 25,
+      "goals" : 19
+
+    },
+
+    {
+
+      "name" : "Juan Mata",
+      "position" : "CAM",
+      "number" : 8,
+      "age": 30,
+      "goals" : 39
+
+    },
+    {
+
+      "name" : "Jesse Lingard",
+      "position" : "CAM",
+      "number" : 14,
+      "age": 25,
+      "goals" : 24
+
+    },
+    {
+
+      "name" : "Fred",
+      "position" : "CM",
+      "number" : 17,
+      "age": 25,
+      "goals" : 1
+
+    },
+
+    {
+
+      "name" : "Juan Mata",
+      "position" : "CAM",
+      "number" : 8,
+      "age": 30,
+      "goals" : 39
+
+    },
+    {
+
+      "name" : "Marouane Fellaini",
+      "position" : "CAM",
+      "number" : 8,
+      "age": 30,
+      "goals" : 20
+
+    },
+    {
+
+      "name" : "Nemanja Matic",
+      "position" : "CAM",
+      "number" : 8,
+      "age": 30,
+      "goals" : 2
+
+    },
+    {
+
+      "name" : "Tom Mctominay",
+      "position" : "CAM",
+      "number" : 8,
+      "age": 21,
+      "goals" : 0
+
+    },
+
+    {
+
+      "name" : "Andreas Pereira",
+      "position" : "CM",
+      "number" : 15,
+      "age": 22,
+      "goals" : 1
+
+    },
+
+    {
+
+      "name" : "Ander Herera",
+      "position" : "CM",
+      "number" : 8,
+      "age": 29,
+      "goals" : 17
+
+    }
+
+
+
+  ],
+
+  "fowards" : [
+    {
+
+      "name" : "Alexis Sanchez",
+      "position" : "LW",
+      "number" : 8,
+      "age": 29,
+      "goals" : 3
+
+    },
+    {
+
+      "name" : "Romelu Lukaku",
+      "position" : "ST",
+      "number" : 8,
+      "age": 25,
+      "goals" : 30
+
+    },
+    {
+
+      "name" : "Marcus Rashford",
+      "position" : "ST",
+      "number" : 8,
+      "age": 20,
+      "goals" : 32
+
+    },
+
+    {
+
+      "name" : "Anthony Martial",
+      "position" : "LW",
+      "number" : 8,
+      "age": 22,
+      "goals" : 37
+
+    }
+
+  ]
+}
