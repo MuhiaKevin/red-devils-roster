@@ -1,0 +1,299 @@
+
+{
+  "goalkeepers" : [
+    {
+
+      "name" : "David De Gea",
+      "position" : "GK",
+      "number" : 1,
+      "age": 27,
+      "cleansheets" : 120
+
+    },
+
+    {
+
+      "name" : "Lee Grant",
+      "position" : "GK",
+      "number" : 13,
+      "age": 35,
+      "cleansheets" : 0
+
+    },
+    {
+
+      "name" : "Sergio Romero",
+      "position" : "GK",
+      "number" : 22,
+      "age": 31,
+      "cleansheets" : 25
+
+    },
+
+    {
+
+      "name" : "Joel Pereira",
+      "position" : "CM",
+      "number" : 6,
+      "age": 22,
+      "cleansheets" : 3
+
+    }
+  ],
+
+
+
+  "defenders" : [
+    {
+
+      "name" : "Victor Lindelof",
+      "position" : "DF",
+      "number" : 2,
+      "age": 24,
+      "goals" : 0
+
+    },
+    {
+
+      "name" : "Eric Bailly",
+      "position" : "DF",
+      "number" : 3,
+      "age": 24,
+      "goals" : 1
+
+    },
+    {
+
+      "name" : "Phil Jones",
+      "position" : "DF",
+      "number" : 4,
+      "age": 26,
+      "goals" : 5
+
+    },
+    {
+
+      "name" : "Chris Smalling",
+      "position" : "DF",
+      "number" : 12,
+      "age": 28,
+      "goals" : 18
+
+    },
+    {
+
+      "name" : "Marcos Rojo",
+      "position" : "DF",
+      "number" : 16,
+      "age": 28,
+      "goals" : 2
+
+    },
+    {
+
+      "name" : "Ashley Young",
+      "position" : "LB",
+      "number" : 18,
+      "age": 33,
+      "goals" : 16
+
+    },
+    {
+
+      "name" : "Diogo Dalot",
+      "position" : "RB",
+      "number" : 20,
+      "age": 19,
+      "goals" : 0
+
+    },
+    {
+
+      "name" : "Luke Shaw",
+      "position" : "LB",
+      "number" : 23,
+      "age": 23,
+      "goals" : 1
+
+    },
+    {
+
+      "name" : "Tim Fosu-Mensah",
+      "position" : "RB",
+      "number" : 24,
+      "age": 20,
+      "goals" : 0
+
+    },
+    {
+
+      "name" : "Antonio Valenci",
+      "position" : "RB",
+      "number" : 25,
+      "age": 33,
+      "goals" : 25
+
+    },
+    {
+
+      "name" : "Mateo Darmian",
+      "position" : "RB",
+      "number" : 36,
+      "age": 28,
+      "goals" : 1
+
+    },
+    {
+
+      "name" : "Axel Tunazebe",
+      "position" : "RB",
+      "number" : 38,
+      "age": 20,
+      "goals" : 0
+
+    }
+    
+  ],
+
+
+  "middlefielders" : [
+    {
+
+      "name" : "Paul Pogba",
+      "position" : "CM",
+      "number" : 6,
+      "age": 25,
+      "goals" : 19
+
+    },
+
+    {
+
+      "name" : "Juan Mata",
+      "position" : "CAM",
+      "number" : 8,
+      "age": 30,
+      "goals" : 39
+
+    },
+    {
+
+      "name" : "Jesse Lingard",
+      "position" : "CAM",
+      "number" : 14,
+      "age": 25,
+      "goals" : 24
+
+    },
+    {
+
+      "name" : "Fred",
+      "position" : "CM",
+      "number" : 17,
+      "age": 25,
+      "goals" : 1
+
+    },
+
+    {
+
+      "name" : "Juan Mata",
+      "position" : "CAM",
+      "number" : 8,
+      "age": 30,
+      "goals" : 39
+
+    },
+    {
+
+      "name" : "Marouane Fellaini",
+      "position" : "CAM",
+      "number" : 8,
+      "age": 30,
+      "goals" : 20
+
+    },
+    {
+
+      "name" : "Nemanja Matic",
+      "position" : "CAM",
+      "number" : 8,
+      "age": 30,
+      "goals" : 2
+
+    },
+    {
+
+      "name" : "Tom Mctominay",
+      "position" : "CAM",
+      "number" : 8,
+      "age": 21,
+      "goals" : 0
+
+    },
+
+    {
+
+      "name" : "Andreas Pereira",
+      "position" : "CM",
+      "number" : 15,
+      "age": 22,
+      "goals" : 1
+
+    },
+
+    {
+
+      "name" : "Ander Herera",
+      "position" : "CM",
+      "number" : 8,
+      "age": 29,
+      "goals" : 17
+
+    }
+
+
+
+  ],
+
+  "fowards" : [
+    {
+
+      "name" : "Alexis Sanchez",
+      "position" : "LW",
+      "number" : 8,
+      "age": 29,
+      "goals" : 3
+
+    },
+    {
+
+      "name" : "Romelu Lukaku",
+      "position" : "ST",
+      "number" : 8,
+      "age": 25,
+      "goals" : 30
+
+    },
+    {
+
+      "name" : "Marcus Rashford",
+      "position" : "ST",
+      "number" : 8,
+      "age": 20,
+      "goals" : 32
+
+    },
+
+    {
+
+      "name" : "Anthony Martial",
+      "position" : "LW",
+      "number" : 8,
+      "age": 22,
+      "goals" : 37
+
+    }
+
+  ]
+}
