@@ -152,7 +152,7 @@
       "goals" : 0
 
     }
-    
+
   ],
 
 
@@ -197,17 +197,8 @@
 
     {
 
-      "name" : "Juan Mata",
-      "position" : "CAM",
-      "number" : 8,
-      "age": 30,
-      "goals" : 39
-
-    },
-    {
-
       "name" : "Marouane Fellaini",
-      "position" : "CAM",
+      "position" : "CM",
       "number" : 8,
       "age": 30,
       "goals" : 20
@@ -216,7 +207,7 @@
     {
 
       "name" : "Nemanja Matic",
-      "position" : "CAM",
+      "position" : "CDM",
       "number" : 8,
       "age": 30,
       "goals" : 2
@@ -225,7 +216,7 @@
     {
 
       "name" : "Tom Mctominay",
-      "position" : "CAM",
+      "position" : "CDM",
       "number" : 8,
       "age": 21,
       "goals" : 0
