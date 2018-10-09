@@ -1,5 +1,6 @@
 
 {
+  "description" : "an app that returns team members of manchester united and their stats",
   "goalkeepers" : [
     {
 

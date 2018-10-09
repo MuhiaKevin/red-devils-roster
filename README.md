@@ -1,5 +1,5 @@
 # red-devils-roster :soccer:
-A simple app that just gives the current team members for my team, Man United  and their stats .
+A simple app that just gives the current team members of my favourite team, Man United  and their stats .
 
 
 # Features

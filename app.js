@@ -12,7 +12,7 @@ const manuplayers = db.get('manuplayers');
 
 // inserting data into a mongodb
 
-function sendToMongo(playersobj){
+const saveToMongo = (playersobj)=>{
   let players = [];
   players.push(playersobj);
   manuplayers.insert(players);
@@ -20,39 +20,36 @@ function sendToMongo(playersobj){
 
 
 
-
-
-
-var playerdata;
+let playerdata;
 
 fs.readFile('players.json', 'utf8', function (err, data) {
     if (err) throw err;
 
     playerdata = JSON.parse(data);
 
-  //   // send all players
-  //
-  //   app.get('/players',(request,response)=>{
-  //     response.send(playerdata)
-  //     console.log('Sent data to IP address => ' + request.ip)
-  //   });
-  //
-  //
-  // // sending players by positions
-  //
-  //   app.get('/players/:position',(request,response)=>{
-  //     let data = request.params
-  //     for(var i = 0 ; i <  Object.entries(playerdata).length; i++){
-  //     	if(data.position === Object.entries(playerdata)[i][0]){
-  //           // console.log(Object.entries(playerdata)[i][1]);
-  //           response.send(Object.entries(playerdata)[i][1]);
-  //           console.log('Sent data to IP address => ' + request.ip)
-  //     	}
-  //     }
-  //
-  //   });
+    // send all players
 
-  sendToMongo(playerdata)
+    app.get('/players',(request,response)=>{
+      response.send(playerdata)
+      console.log('Sent data to IP address => ' + request.ip)
+    });
+
+
+  // sending players by positions
+
+    app.get('/players/:position',(request,response)=>{
+      let data = request.params
+      for(var i = 0 ; i <  Object.entries(playerdata).length; i++){
+      	if(data.position === Object.entries(playerdata)[i][0]){
+            // console.log(Object.entries(playerdata)[i][1]);
+            response.send(Object.entries(playerdata)[i][1]);
+            console.log('Sent data to IP address => ' + request.ip)
+      	}
+      }
+
+    });
+
+  saveToMongo(playerdata)
 
 
 });
