@@ -1,3 +1,5 @@
+![Manchester United](manchester_united.jpg)
+
 # red-devils-roster :soccer:
 A simple app that just gives the current team members of my favourite team, Man United  and their stats .
 
