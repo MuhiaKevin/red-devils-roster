@@ -1,5 +1,6 @@
 const monk = require('monk'); // will be used to save the data to mongodb
 
+
 // connect to the database
 const db = monk('localhost/manudb');
 
@@ -18,10 +19,7 @@ class Database {
     console.log('Saved to mongo');
   }
 
-// function to query player info from database
-
 
 }
-
 
 module.exports = Database;
