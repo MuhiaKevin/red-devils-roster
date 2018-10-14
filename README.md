@@ -9,6 +9,6 @@ A simple app that just gives the current team members of my favourite team, Man 
 * [x] Saves the players info to a monogdb.
 
 
-# TODO
+# TODOS  
 
 * [ ] Use a scrapper to update the players info

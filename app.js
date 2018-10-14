@@ -1,60 +1,44 @@
 const express = require('express');
 const app = express();
 const fs = require('fs');
-const monk = require('monk'); // will be used to save the data to mongodb
-
-// connect to the database
-const db  = monk('localhost/manudb');
-
-// get manuplayers collection
-const manuplayers = db.get('manuplayers');
-
-
-// inserting data into a mongodb
-
-const saveToMongo = (playersobj)=>{
-  let players = [];
-  players.push(playersobj);
-  manuplayers.insert(players);
-}
-
-
+const Database = require('./database')
+const database = new Database();
 
 let playerdata;
 
-fs.readFile('players.json', 'utf8', function (err, data) {
-    if (err) throw err;
 
-    playerdata = JSON.parse(data);
+fs.readFile('players.json', 'utf8', function(err, data) {
+  if (err) throw err;
 
-    // send all players
-
-    app.get('/players',(request,response)=>{
-      response.send(playerdata)
-      console.log('Sent data to IP address => ' + request.ip)
-    });
+  playerdata = JSON.parse(data);
 
 
-  // sending players by positions
+  // route to all players
 
-    app.get('/players/:position',(request,response)=>{
-      let data = request.params
-      for(var i = 0 ; i <  Object.entries(playerdata).length; i++){
-      	if(data.position === Object.entries(playerdata)[i][0]){
-            // console.log(Object.entries(playerdata)[i][1]);
-            response.send(Object.entries(playerdata)[i][1]);
-            console.log('Sent data to IP address => ' + request.ip)
-      	}
+  app.get('/players', (request, response) => {
+    response.send(playerdata)
+    console.log('Sent data to IP address => ' + request.ip)
+
+
+  });
+
+  // route players by positions
+
+  app.get('/players/:position', (request, response) => {
+    let position = request.params.position
+    for (var i = 0; i < Object.entries(playerdata).length; i++) {
+      if (position === Object.entries(playerdata)[i][0]) {
+        console.log(Object.entries(playerdata)[i][1]);
+        response.send(Object.entries(playerdata)[i][1]);
+        console.log('Sent data to IP address => ' + request.ip)
       }
+    }
 
-    });
-
-  saveToMongo(playerdata)
-
+  });
 
 });
 
 
-app.listen(3000,()=>{
+app.listen(3000, () => {
   console.log('Listening  at port 3000 ............\n')
 })
