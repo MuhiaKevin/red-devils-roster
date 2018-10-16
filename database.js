@@ -10,13 +10,20 @@ const manuplayers = db.get('manuplayers');
 
 
 class Database {
-  // function to insert data into a database
-
+  
+  // method to insert data into a database
   saveToMongo(playersobj) {
     let players = [];
     players.push(playersobj);
     manuplayers.insert(players);
     console.log('Saved to mongo');
+  }
+
+  // method to query the database
+  queryManuplayers(queryObj) {
+    return manuplayers.find(queryObj).then(function(value) {
+      console.log(value);
+    });
   }
 
 

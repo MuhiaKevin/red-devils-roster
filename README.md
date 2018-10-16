@@ -6,8 +6,8 @@ A simple app that just gives the current team members of my favourite team, Man 
 
 # Features
 
-* [x] Saves the players info to a monogdb.
-
+* Saves the players info to a monogdb.
+* returns player info when query is sent
 
 # TODOS  
 

@@ -2,11 +2,14 @@ const express = require('express');
 const app = express();
 const fs = require('fs');
 const Database = require('./database')
+
+
+
 const database = new Database();
-
-
-
 let playerdata;
+
+// database.queryManuplayers({});
+
 
 fs.readFile('players.json', 'utf8', function(err, data) {
   if (err) throw err;
@@ -15,8 +18,8 @@ fs.readFile('players.json', 'utf8', function(err, data) {
   // route to all players
 
   app.get('/players', (request, response) => {
-    // response.send(playerdata)
-    response.send(request.query.player);
+    response.send(playerdata);
+    // database.saveToMongo(playerdata);
     console.log('Sent data to IP address => ' + request.ip)
   });
 
@@ -27,15 +30,11 @@ fs.readFile('players.json', 'utf8', function(err, data) {
     let position = request.params.position
     for (var i = 0; i < Object.entries(playerdata).length; i++) {
       if (position === Object.entries(playerdata)[i][0]) {
-        console.log(Object.entries(playerdata)[i][1]);
         response.json(Object.entries(playerdata)[i][1]);
         console.log('Sent data to IP address => ' + request.ip)
       }
     }
   });
-
-
-
 
 
 });
