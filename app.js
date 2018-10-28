@@ -1,6 +1,5 @@
 const express = require('express');
 const app = express();
-const fs = require('fs');
 const Database = require('./database')
 
 const database = new Database();
@@ -15,10 +14,8 @@ app.get('/players', (request, response) => {
 });
 
 
-// format of query strings
+// format for query strings
 // http://localhost:3000/players?position=middlefielder&name=pogba
-
-
 
 app.get('/search',(req,resp)=>{
   let queryParam = req.query;
