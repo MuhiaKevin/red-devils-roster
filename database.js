@@ -1,32 +1,31 @@
 const monk = require('monk'); // will be used to save the data to mongodb
 
 
-// connect to the database
-const db = monk('localhost/manudb');
-
-// get manuplayers collection
-const manuplayers = db.get('manuplayers');
-
+const connectDatabase = 'localhost/manudb';
+const db = monk(connectDatabase);  // connect to the database
+const manuplayers = db.get('manuplayers');// get manuplayers collection
 
 
 class Database {
-  
+
   // method to insert data into a database
   saveToMongo(playersobj) {
-    let players = [];
-    players.push(playersobj);
-    manuplayers.insert(players);
+    manuplayers.insert(playersobj);
     console.log('Saved to mongo');
   }
 
   // method to query the database
-  queryManuplayers(queryObj) {
-    return manuplayers.find(queryObj).then(function(value) {
-      console.log(value);
-    });
+  getAllPlayers(){
+    return manuplayers.find();
   }
 
 
+  search(query){
+    console.log(query);
+  }
+
 }
+
+
 
 module.exports = Database;
