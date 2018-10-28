@@ -20,7 +20,6 @@ fs.readFile('players.json', 'utf8', function(err, data) {
   app.get('/players', (request, response) => {
     response.json(playerdata);
     database.saveToMongo(playerdata);
-    console.log('Sent data to IP address => ' + request.ip)
   });
 
 
