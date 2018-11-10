@@ -6,9 +6,12 @@ A simple API that just gives the current team members of my favourite team, Man 
 
 # Features
 
-* Saves the players info to a monogdb.
-* returns player info when query is sent
+* has information about all players
+* gives information on specific players
+* gives information about about players in certain position
+
 
 # TODOS  
 
 * [ ] Use a scrapper to update the players info
+* [ ] Give search results to querys such as "how many players have this particular age?" 

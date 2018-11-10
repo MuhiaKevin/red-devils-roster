@@ -11,7 +11,9 @@ app.get('/players', (request, response) => {
   database.getAllPlayers().then((players)=>{
     response.json(players);
   })
+
 });
+
 
 
 // format for query strings

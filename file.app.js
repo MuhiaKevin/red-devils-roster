@@ -19,7 +19,8 @@ fs.readFile('players.json', 'utf8', function(err, data) {
 
   app.get('/players', (request, response) => {
     response.json(playerdata);
-    database.saveToMongo(playerdata);
+    console.log(playerdata);
+
   });
 
 
@@ -30,7 +31,7 @@ fs.readFile('players.json', 'utf8', function(err, data) {
     for (var i = 0; i < Object.entries(playerdata).length; i++) {
       if (position === Object.entries(playerdata)[i][0]) {
         response.json(Object.entries(playerdata)[i][1]);
-        console.log('Sent data to IP address => ' + request.ip)
+        // console.log('Sent data to IP address => ' + request.ip)
       }
     }
   });
