@@ -1,19 +1,39 @@
 const monk = require('monk'); // will be used to save the data to mongodb
 
-const mongouri = 'mongodb://MuhiaKevin:MuhiaKevinmlab6765@ds161092.mlab.com:61092/manuplayers'
+const mongouri = 'localhost/manudb'; // mongodb://<dbuser>:<dbpassword>@ds259253.mlab.com:59253/manudb
 const db = monk(mongouri);  // connect to the database
-const manuplayers = db.get('manucollections');// get manuplayers collection
+const manuplayers = db.get('manuplayers');// get manuplayers collection
 
 
 class Database {
 
-  // method to query the database
+  // methods to query the database by object ids
+
+  
   getAllPlayers(){
     return manuplayers.find();
   }
 
+  getDefenders(){
+  	return manuplayers.find({ "_id" : "5be1899a8c9e071362d743ac"});
+  }
 
-  
+  getMid(){
+  	return manuplayers.find({ "_id" : "5be1899a8c9e071362d743ad"});
+  }
+
+
+  getFowards(){
+  	return manuplayers.find({ "_id" : "5be1899a8c9e071362d743ae"});
+  }
+
+
+  getGoalkeepers(){
+    return manuplayers.find({ "_id" : "5be1899a8c9e071362d743ab"});
+  }
+
+
+
 
 }
 
