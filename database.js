@@ -1,38 +1,42 @@
 const monk = require('monk'); // will be used to save the data to mongodb
 
-const mongouri = 'localhost/manudb'; // mongodb://<dbuser>:<dbpassword>@ds259253.mlab.com:59253/manudb
-const db = monk(mongouri);  // connect to the database
-const manuplayers = db.get('manuplayers');// get manuplayers collection
+// // mongo
+// const mongouri = 'localhost/manudb'; 
+// const db = monk(mongouri);  // connect to the database
+// const manuplayers = db.get('manuplayers');// get manuplayers collection
 
+// mlab 
+const mlabUri = 'mongodb://MuhiaKevin:MuhiaKevin6765@ds259253.mlab.com:59253/manudb';
+const dbmlab = monk(mlabUri);
+const mlabmanuplayers = dbmlab.get('manuplayers');
 
 class Database {
 
-  // methods to query the database by object ids
+  // methods to query the database by mongo object ids
 
-  
+
   getAllPlayers(){
-    return manuplayers.find();
+    return mlabmanuplayers.find();
   }
 
   getDefenders(){
-  	return manuplayers.find({ "_id" : "5be1899a8c9e071362d743ac"});
+  	return mlabmanuplayers.find({ "_id" : "5be1899a8c9e071362d743ac"});
+
   }
 
   getMid(){
-  	return manuplayers.find({ "_id" : "5be1899a8c9e071362d743ad"});
+  	return mlabmanuplayers.find({ "_id" : "5be1899a8c9e071362d743ad"});
   }
 
 
   getFowards(){
-  	return manuplayers.find({ "_id" : "5be1899a8c9e071362d743ae"});
+  	return mlabmanuplayers.find({ "_id" : "5be1899a8c9e071362d743ae"});
   }
 
 
   getGoalkeepers(){
-    return manuplayers.find({ "_id" : "5be1899a8c9e071362d743ab"});
+    return mlabmanuplayers.find({ "_id" : "5be1899a8c9e071362d743ab"});
   }
-
-
 
 
 }

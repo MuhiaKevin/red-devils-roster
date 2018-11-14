@@ -1,16 +1,15 @@
 const express = require('express');
 const app = express();
 const Database = require('./database')
-
-
-const port = process.env.PORT || 3000;
 const database = new Database();
 
+const port = process.env.PORT || 3000;
 
-/* 
-	TODO 
+
+/*
+	TODO
 	format for query strings
-	 http://localhost:3000/players?position=middlefielder&name=pogba
+	 http://localhost:3000/players:/position/s?name=pogba
 
 */
 
@@ -25,6 +24,8 @@ app.get('/players', (request, response) => {
 });
 
 
+
+
 // route by player position
 
 app.get('/players/:position', (request, response) => {
@@ -34,27 +35,27 @@ app.get('/players/:position', (request, response) => {
 		database.getDefenders().then((players)=>{
 	    response.json(players);
 	  });
-	
+
 	}
 
 	else if(position === "middlefielders"){
 		database.getMid().then((players)=>{
 	    response.json(players);
-	  })		
+	  })
 
 	}
 
 	else if(position === "fowards"){
 		database.getFowards().then((players)=>{
 	    response.json(players);
-	  })		
+	  })
 
 	}
 
 	else if(position === "goalkeepers"){
 		database.getGoalkeepers().then((players)=>{
 	    response.json(players);
-	  })		
+	  })
 
 	}
 
