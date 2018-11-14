@@ -6,7 +6,7 @@ const monk = require('monk'); // will be used to save the data to mongodb
 // const manuplayers = db.get('manuplayers');// get manuplayers collection
 
 // mlab 
-const mlabUri = 'mongodb://MuhiaKevin:MuhiaKevin6765@ds259253.mlab.com:59253/manudb';
+const mlabUri = 'MLAB URL HERE';
 const dbmlab = monk(mlabUri);
 const mlabmanuplayers = dbmlab.get('manuplayers');
 
