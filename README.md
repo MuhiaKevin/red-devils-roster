@@ -17,4 +17,4 @@ A simple API that just gives the current team members of my favourite team, Man 
 * [ ] Give search results to querys such as "how many players have this particular age?" 
 
 
-Check it out [here](https://red-devils-roster-api.herokuapp.com/players)
+Check it out [here](https://red-devils-roster-api.herokuapp.com/players) 

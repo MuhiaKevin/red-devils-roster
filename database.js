@@ -10,6 +10,7 @@ const mlabUri = 'MLAB URL HERE';
 const dbmlab = monk(mlabUri);
 const mlabmanuplayers = dbmlab.get('manuplayers');
 
+
 class Database {
 
   // methods to query the database by mongo object ids
