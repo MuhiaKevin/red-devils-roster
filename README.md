@@ -14,7 +14,6 @@ A simple API that just gives the current team members of my favourite team, Man 
 # TODOS  
 
 * [ ] Use a scrapper to update the players info
-* [ ] Better improve on the API
 
 
 Check it out [here](https://red-devils-roster-api.herokuapp.com/players) 
